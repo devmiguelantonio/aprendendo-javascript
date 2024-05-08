@@ -7,44 +7,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Estrutura da calculadora -->
-    <div class = "calculadora">
+    <!DOCTYPE html>
+<html lang="pt-br"> <!-- Define a linguagem do documento como português brasileiro -->
+<head>
+    <meta charset="UTF-8"> <!-- Especifica o conjunto de caracteres -->
+    <title>Calculadora Simples</title> <!-- Título do documento -->
+    <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo CSS para estilizar a calculadora -->
+</head>
+<body>
+    <!-- A estrutura da calculadora -->
+    <div class="calculator">
         <!-- Campo de entrada para mostrar a expressão e resultados -->
         <input type="text" id="display" readonly> <!-- Campo apenas para leitura -->
-
-        <div class = butoes>
-
-            <!-- Seção para ações especiais -->
+        <!-- Seção para os botões da calculadora -->
+        <div class="buttons">
+            <!-- Botões para ações especiais -->
             <button data-action="clear">C</button> <!-- Limpa tudo -->
             <button data-action="delete">DEL</button> <!-- Apaga um caractere -->
-            <button data-action="operator">/</button> <!-- Operador de divisão-->
+            <button data-action="operator">/</button> <!-- Operador de divisão -->
             <button data-action="operator">*</button> <!-- Operador de multiplicação -->
-
-            <!-- Botões para numeros e operadores -->
+            
+            <!-- Botões para números e operadores -->
             <button data-action="number">7</button>
             <button data-action="number">8</button>
             <button data-action="number">9</button>
             <button data-action="operator">-</button> <!-- Operador de subtração -->
 
-            <button data-action="number">4</button> 
-            <button data-action="number">5</button> 
-            <button data-action="number">6</button> 
-            <button data-action="operator">+</button> <!-- Operador de adição  -->
+            <button data-action="number">4</button>
+            <button data-action="number">5</button>
+            <button data-action="number">6</button>
+            <button data-action="operator">+</button> <!-- Operador de adição -->
 
-            <button data-action="number">1</button> 
-            <button data-action="number">2</button> 
-            <button data-action="number">3</button> 
-            <button data-action="equals">=</button> <!-- Botão de calcular  -->
+            <button data-action="number">1</button>
+            <button data-action="number">2</button>
+            <button data-action="number">3</button>
+            <button data-action="equals">=</button> <!-- Botão para calcular -->
 
-            <button data-action="number">0</button> <!-- Zero  -->
-            <button data-action="number">.</button> <!--  Ponto decimal -->
-            <button data-action="blank"></button> <!-- Espaço vazio para alinhar os botões  -->
-            <button data-action="equals">=</button> <!--  Outro botão igual para simetria -->
-        
-        </div>    
-            
+            <button data-action="number">0</button> <!-- Zero -->
+            <button data-action="number">.</button> <!-- Ponto decimal -->
+            <button data-action="blank"></button> <!-- Espaço vazio para alinhar os botões -->
+            <button data-action="equals">=</button> <!-- Outro botão de igual para simetria -->
+        </div>
     </div>
 
-    <script src="script.js"></script> <!-- Importa o arquivo JavaScript -->
+    <script src="script.js"></script> <!-- Importa o arquivo JavaScript para a lógica -->
+</body>
+</html>
+
 </body>
 </html>
