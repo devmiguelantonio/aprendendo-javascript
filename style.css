@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {
+    /* Centraliza a calculadora no centro da página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Define a altura da janela como 100% da visualização */
+    margin: 0; /* Removendo margens do body */
+}
+
+.calculadora {
+    /* Define a aparência da calculadora */
+    border: 1px solid #000427; /* Borda azul escura */
+    padding: 10px; /* Acochoamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    background-color: rgb(122, 122, 122); /* Cor de fundo */
+}
+
+#display {
+    /* Estilo para campo de entrada */
+    width: 100%; /* Ocupa 100% da largura do conteiner */
+    text-align: right; /* alinha texto a direita */
+    padding: 10px; /* Acochoamento interno */ 
+    border: 1px solid #ddd;
+}
+
+.butoes {
+    /* Define layout para os butões */
+    display: grid; /* Usando layout de grade */
+    grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas iguais */
+    gap: 10px; /* Espaçamento entre botões */
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+button {
+    /* Estilo dos butões */
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Sem bordas externas */
+    border-radius: 5px; /* Cantos arredondados */
+    background-color: #e0e0e0; /* Cor do fundo */
+    cursor: pointer; /* Mostra o cursor de pontei ao passar o mouse */
+    transition: background-color 0.2s; /* Animação suave de fundo ao passar o mouse */
+}
+
+butoes:hover {
+    background-color: #d0d0d0; /*Muda a cor de fundo ao passar o mouse*/
+}
